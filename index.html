@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Heroes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-warning">
+    <header>
+        <section id="top-banner">
+            <h1 class="text-center pt-5">Marvel's Mighty Heroes</h1>
+            <div class="container input-group mb-3 mt-5">
+                <input id="input-field" type="text" class="form-control" placeholder="Search about your favorite superhero" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button id="search-btn" onclick="searchHero()" class="btn btn-success text-white" type="button" id="button-addon2">Search</button>
+            </div>
+        </section>
+        <!-- spinner -->
+        <div id="loading-spinner" class="d-flex justify-content-center d-none">
+            <div class="spinner-border text-primary" style="width: 4rem; height: 4rem; " role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <!-- modals -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Character Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="hero-info" class="d-flex justify-content-center align-items-center mt-5">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="heroDiv" class="justify-content-center align-items-center mt-5 ">
+
+        </div>
+        <div id="single-hero" class="d-flex flex-wrap justify-content-center">
+
+        </div>
+    </main>
+    <footer class="container mt-5 text-center text-white">
+        <h5 id="provider"></h5>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

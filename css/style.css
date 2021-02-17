@@ -1,0 +1,59 @@
+#top-banner {
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 300px;
+}
+
+header h1 {
+    font-family: 'Stalinist One', cursive;
+    font-weight: 900;
+    color: linen;
+}
+
+#input-field #search-btn {
+    margin-bottom: 1em;
+}
+
+#heroDiv {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+#single-hero {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+    #heroDiv {
+        margin-right: 100px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #heroDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #heroDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #heroDiv {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
