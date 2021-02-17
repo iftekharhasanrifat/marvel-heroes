@@ -14,7 +14,7 @@ const loadHeroes = offset => {
         .then(res => res.json())
         .then(data => {
             data.data.results.forEach(hero => {
-                const thumbnail = hero.thumbnail.path;
+                const thumbnail = hero.thumbnail.path.split('ttp')[0] + 'ttps' + hero.thumbnail.path.split('ttp')[1];
                 const extension = hero.thumbnail.extension;
                 const imgUrl = thumbnail + '.' + extension;
                 // document.getElementById('hero').src = imgUrl;
@@ -59,7 +59,7 @@ const displayHeroInfo = heroes => {
     const heroInfoDiv = document.getElementById('hero-info');
     heroInfoDiv.innerHTML = '';
     heroes.forEach(hero => {
-        const thumbnail = hero.thumbnail.path;
+        const thumbnail = hero.thumbnail.path.split('ttp')[0] + 'ttps' + hero.thumbnail.path.split('ttp')[1];
         const extension = hero.thumbnail.extension;
         const imgUrl = thumbnail + '.' + extension;
         // document.getElementById('hero').src = imgUrl;
@@ -90,7 +90,7 @@ const showHero = heroes => {
         character.innerHTML = '';
         heroDiv.innerHTML = '';
         heroes.forEach(hero => {
-            const thumbnail = hero.thumbnail.path;
+            const thumbnail = hero.thumbnail.path.split('ttp')[0] + 'ttps' + hero.thumbnail.path.split('ttp')[1];
             const extension = hero.thumbnail.extension;
             const imgUrl = thumbnail + '.' + extension;
             // document.getElementById('hero').src = imgUrl;
