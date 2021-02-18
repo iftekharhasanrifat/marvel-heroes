@@ -11,6 +11,10 @@
     height: 300px;
 }
 
+.card {
+    height: 400px;
+}
+
 header h1 {
     font-family: 'Stalinist One', cursive;
     font-weight: 900;

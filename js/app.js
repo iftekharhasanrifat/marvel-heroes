@@ -24,7 +24,7 @@ const loadHeroes = offset => {
                     `<div onclick="searchHeroById(${hero.id})" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  class="card" style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
                         <img id="hero" src="${imgUrl}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">${hero.name}</h5>
+                            <h4 class="card-title">${hero.name}</h4>
                         </div>
                 </div>`
                 heroDiv.appendChild(singleHero);
@@ -100,7 +100,7 @@ const showHero = heroes => {
                 `<div onclick="searchHeroById(${hero.id})" class="card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
                     <img id="hero" src="${imgUrl}" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${hero.name}</h5>
+                        <h4 class="card-title">${hero.name}</h4>
                     </div>
             </div>`
             character.appendChild(singleHero);
