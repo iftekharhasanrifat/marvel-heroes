@@ -21,7 +21,7 @@ const loadHeroes = offset => {
                 const heroDiv = document.getElementById('heroDiv');
                 const singleHero = document.createElement('div');
                 singleHero.innerHTML =
-                    `<div onclick="searchHeroById(${hero.id})" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  class="card" style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
+                    `<div onclick="searchHeroById(${hero.id})" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  class="card heroes" style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
                         <img id="hero" src="${imgUrl}" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h4 class="card-title">${hero.name}</h4>
@@ -97,7 +97,7 @@ const showHero = heroes => {
 
             const singleHero = document.createElement('div');
             singleHero.innerHTML =
-                `<div onclick="searchHeroById(${hero.id})" class="card" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
+                `<div onclick="searchHeroById(${hero.id})" class="card heroes" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  style="width: 18rem;border-radius: 15px; overflow: hidden; box-shadow: 10px 10px 30px lightgray;cursor: pointer;">
                     <img id="hero" src="${imgUrl}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h4 class="card-title">${hero.name}</h4>
